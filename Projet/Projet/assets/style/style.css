@@ -1,0 +1,342 @@
+/*----------- Framework du site :  -----------*/
+:root { 
+    --main-color: white;
+    --sec-color: black;
+    --third-color: #BE6E46;
+    --marge: auto;
+    --font: 'PlayfairDisplay-VariableFont_wght';
+    --size-titre: 40px;
+    --size-titre-sec: 30px;
+    --size-texte: 20px;
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay-VariableFont_wght';
+    src: url('../font/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay-Italic-VariableFont_wght';
+    src: url('../font/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*----------- Style du site -----------*/
+body{
+    margin: 0;
+}
+
+.texte_gastro {
+    font-family: var(--font);
+}
+
+.texte_gastro_italic {
+    font-family: 'PlayfairDisplay-Italic-VariableFont_wght';
+}
+
+/*header*/
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: var(--main-color); 
+    box-shadow: 0px 4px 2px var(--sec-color);
+}
+h1[class~="titre"]{
+    margin-top: -5px;
+    font-family: var(--font), sans-serif;
+    font-size: var(--size-titre);
+    color: var(--sec-color);
+    text-align: center;
+}
+
+p[class~="sous-titre"]{
+    font-family: 'PlayfairDisplay-Italic-VariableFont_wght', sans-serif; 
+    font-size: var(--size-titre-sec);
+    color: var(--third-color);
+    text-align: center; 
+}
+
+header p{
+    margin-top: -20px;
+    margin-bottom: -10px;
+}
+
+div[class~="navbar"]{
+    display: flex;
+    justify-content: center;
+    margin-bottom: -10px;
+}
+a {
+    text-decoration: none; 
+    color: inherit;
+  }
+a[class~="jump"]{
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-family: var(--font);
+}
+
+.jumper-marge {
+    margin-bottom: 150px;
+}
+
+
+/*Presentation*/
+.presentation {
+    position: relative;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 1);
+    padding: 10px;
+    font-size: var(--size-titre-sec);
+    border: 3px solid;
+    border-color: var(--third-color);
+    
+    
+}
+/*gallery*/
+.description{
+    font-family: 'PlayfairDisplay-Italic-VariableFont_wght', sans-serif;
+    font-size: var(--size-texte);
+    text-align: center;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.imageG {
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+/*Réservation */
+.reservation{
+    position: relative;
+}
+.form_reservation {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+  
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+}
+  
+input[type="submit"] {
+    background-color: var(--third-color);
+    color: var(--main-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+  
+input[type="submit"]:hover {
+    background-color: var(--sec-color);
+}
+
+/*Avis utilisateur*/
+.avis-utilisateur {
+    background-color: var(--main-color);
+    padding: 20px;
+    flex: 1;
+}
+
+.avis{
+    display: flex;
+}
+
+
+.img-profil {
+    flex: 1;
+    padding: 10px;
+}
+
+.img-profil img {
+    max-width: 100%;
+    height: auto;
+}
+
+.info {
+    flex: 2;
+    padding: 10px;
+    text-align: left;
+}
+
+.name {
+    font-size: var(--size-titre-sec);
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: var(--font);
+}
+
+.rating {
+    font-size: var(--size-texte);
+    margin-bottom: 10px;
+    font-family: var(--font);
+}
+
+.review {
+    font-size: var(--size-texte);
+    font-family: var(--font);
+}
+
+
+/*footer*/
+footer img{
+    background-color: var(--sec-color);
+    box-shadow: 10px 40px 0px rgba(0, 0, 0, 0.1);
+    width: 10%;
+    
+}
+
+footer {
+    background-color: var(--sec-color);
+    color: var(--third-color);
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+footer span {
+    margin-right: 15px;
+    font-family: var(--font);
+}
+
+i {
+    color:var(--third-color);
+    font-size: xx-large;
+    margin-left: 25px;
+    margin-top: 10%;
+}
+
+
+/* ----------- Hover et autres ----------- */
+
+a[class~="jump"]:hover{
+    color: var(--third-color);
+    font-size: large;
+    font-weight: bolder; 
+}
+
+
+/* ----------- Caroussel ----------- */
+
+.carousel {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    text-align: center; 
+    justify-content: center;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.carousel-title {
+    font-size: var(--size-titre-sec);
+    margin-bottom: 10px;
+    color: var(--third-color);
+}
+
+.carousel-description {
+    font-size: var(--size-texte);
+    color: var(--sec-color);
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.prev-button {
+    left: 15px;
+    color: var(--sec-color);
+}
+
+.next-button {
+    right: 15px;
+    color: var(--sec-color);
+}
+
+div[class~="hover-arrow"]:hover{
+    font-size: x-large;
+    font-weight: bolder;
+    color: var(--third-color);
+    
+}
+
+/* ----------- Media Queries ----------- */
+
+@media (max-width: 768px) {
+    .text {
+        font-size: 15px;
+    }
+}

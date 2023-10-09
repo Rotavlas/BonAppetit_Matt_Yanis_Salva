@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/font/Playfair_Display/static/PlayfairDisplay-VariableFont_wght.ttf">
+    <link rel="stylesheet" href="assets/font/Playfair_Display/static/PlayfairDisplay-Italic-VariableFont_wght.ttf">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Bon Appétit</title>
+</head>
+<body>
+    <header class="tete">
+        <h1 class="titre">Bon Appétit</h1>
+        <p class="sous-titre">L'excellence dans l'essentiel</p>
+        <div class="navbar">
+            <a class="jump" href="#carte">La carte</a>
+            <a class="jump" href="#reserve">Réserver</a>
+            <a class="jump" href="#temoignage">Témoignages</a>
+        </div>
+    </header>
+    <section class="presentation">
+        <img src="assets/images/cover_dark.jpg" alt="" class="image">
+        <p class="text" >Dans l'écrin raffiné de "Bon Appétit", l'art culinaire atteint des sommets grâce au talent incontesté du chef Michel Bouillon. Chaque visite dans notre restaurant gastronomique est une promesse de découvertes gustatives exceptionnelles. Notre équipe attentionnée veille à ce que votre expérience soit inoubliable, tandis que notre carte des vins parfaitement assortie complète chaque plat pour une harmonie gastronomique parfaite. Chez "Bon Appétit", chaque repas est une célébration de l'art de la cuisine, une expérience à savourer avec délice.</p>
+    </section>
+    <div id="carte" class="jumper-marge"></div>
+    <section>
+        <p class="sous-titre">À la carte</p>
+        <div class="carousel">
+            <div class="carousel-container">
+                <div class="carousel-item">
+                    <img src="./assets/images/food_1_dark.jpg" alt="Image 1">
+                    <h2 class="carousel-title texte_gastro">Boeuf Bourguignon</h2>
+                    <p class="carousel-description texte_gastro_italic">Découvrez la revisite de la fameuse recette du boeuf bourguignon avec une touche de légèreté.</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/food_4_dark.jpg" alt="Image 2">
+                    <h2 class="carousel-title texte_gastro">Burger du chef</h2>
+                    <p class="carousel-description texte_gastro_italic">Notre burger gourmet qui ne pourra que vous conquérir.</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/food_7_dark.jpg" alt="Image 3">
+                    <h2 class="carousel-title texte_gastro">Steak</h2>
+                    <p class="carousel-description texte_gastro_italic">Un steak, de l'oeuf, des tomates, du romarin, une légère touche de beurre. L'excellence dans la simplicité.</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/food_10_dark.jpg" alt="Image 4">
+                    <h2 class="carousel-title texte_gastro">Tartare de thon rouge</h2>
+                    <p class="carousel-description texte_gastro_italic">Un mélange exquis de thon rouge tendre, d'huile d'olive, de câpres, de zeste de citron et de persil <br> pour une expérience gastronomique raffinée.</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/food_11_dark.jpg" alt="Image 5">
+                    <h2 class="carousel-title texte_gastro">Asperges sur son lit de mâche.</h2>
+                    <p class="carousel-description texte_gastro_italic">Une délicate symbiose entre le raffinement des asperges et le veganisme de la mâche, le tout accompagner de maïs et <br>soupoudré de zeste de citron.</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/food_5_dark.jpg" alt="Image 6">
+                    <h2 class="carousel-title texte_gastro">Entrée maritime</h2>
+                    <p class="carousel-description texte_gastro_italic">Gambas et tomates cerises le tout baignant allégrement dans la sauce du chef.</p>
+                </div>
+            </div>
+            <div class="carousel-button prev-button hover-arrow" onclick="prevSlide()">&#10094;</div>
+            <div class="carousel-button next-button hover-arrow" onclick="nextSlide()">&#10095;</div>
+    </section>
+    <section>
+        <p class="sous-titre">Gallerie</p>
+        <p class="description">Découvrez l'art culinaire du chef, où chaque plat est une fusion de saveurs exquises et de créativité gastronomique</p>
+        <div class="gallery">
+            <div class="imageG">
+                <img src="assets/images/food_3_dark.jpg" alt="">
+            </div>
+            <div class="imageG">
+                <img src="assets/images/food_8_dark.jpg" alt="">
+            </div>
+            <div class="imageG">
+                <img src="assets/images/food_6_dark.jpg" alt="">
+            </div>
+            <div class="imageG">
+                <img src="assets/images/food_2_dark.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <div id="reserve" class="jumper-marge"></div>
+    <section class="reservation">
+        <img src="assets/images/testimonal_background_dark.jpg" alt="" class="image">
+        <div class="form_reservation">
+            <p class="sous-titre">Réservation</p>
+            <form action="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" method="POST">
+                <label for="nom">Nom :</label>
+                <input type="text" required><br><br>
+
+                <label for="personnes">Nombre de personnes :</label>
+                <input type="number" min="1" required><br><br>
+        
+                <label for="date">Jour de la semaine :</label>
+                <input type="date" required><br><br>
+        
+                <label for="heure">Heure de réservation :</label>
+                <select required>
+                    <option value="19:00">19:00</option>
+                    <option value="19:30">19:30</option>
+                    <option value="20:00">20:00</option>
+                    <option value="20:30">20:30</option>
+                    <option value="21:00">21:00</option>
+                    <option value="21:30">21:30</option>
+                </select><br><br>
+        
+                <input type="submit" value="Réserver">
+            </form>
+        </div>
+    </section>
+    
+    
+    
+    <div id="temoignage" class="jumper-marge"></div>
+    
+    <p class="sous-titre">Témoignages</p>
+    <section class="avis">
+        <div class="avis-utilisateur">
+            <div class="img-profil">
+                <img src="assets/images/testimonial_1_dark.jpg" alt="Image">
+            </div>
+            <div class="info">
+                <p class="name">Gaetane Canus</p>
+                <p class="rating">Note : 4.5/5</p>
+                <p class="review">Avis : "C'est une expérience culinaire extraordinaire chez Bon Appétit ! L'ambiance est élégante, le service est impeccable, et chaque plat est une explosion de saveurs. Le menu dégustation est un must. Ce restaurant est une perle rare pour les amateurs de cuisine raffinée. J'ai hâte d'y retourner !"</p>
+            </div>
+        </div>
+        <div class="avis-utilisateur">
+            <div class="img-profil">
+                <img src="assets/images/testimonial_2_dark.jpg" alt="Image">
+            </div>
+            <div class="info">
+                <p class="name">Alexandra Lanzonni</p>
+                <p class="rating">Note : 5/5</p>
+                <p class="review">Avis : "Bon Appétit est tout simplement un paradis gastronomique ! Dès l'instant où vous franchissez la porte, vous entrez dans un monde de délices. Le service est au-delà de l'excellence, la créativité culinaire est incomparable, et chaque plat est une œuvre d'art gustative. Ce restaurant est un véritable trésor pour les gourmets exigeants. Je suis déjà impatient de revenir pour une nouvelle aventure gastronomique."</p>
+            </div>
+        </div>
+        <div class="avis-utilisateur">
+            <div class="img-profil">
+                <img src="assets/images/testimonial_3_dark.jpg" alt="Image">
+            </div>
+            <div class="info">
+                <p class="name">Brigitte Chaudar</p>
+                <p class="rating">Note : 4/5</p>
+                <p class="review">Avis : "Bonne expérience globale chez Bon Appétit, je lui attribue un solide 4 sur 5. L'ambiance et le service étaient excellents, et la créativité culinaire était indéniable. Cependant, certains plats étaient un peu en deçà de nos attentes. Dans l'ensemble, une expérience mémorable, mais il y a encore un petit potentiel d'amélioration."</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>  
+            <a href="https://fr-fr.facebook.com/"></a><i class="fa-brands fa-facebook" ></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+
+        <span>Contact : bonappetit@aldente.com<br>Adresse : 75 Allée du restaurant, 75000 Paris</span>
+        
+        <img src="./assets/images/signature.png" alt="signature">
+    </footer>
+    
+    
+    
+    <script>
+        let currentIndex = 0;
+        const items = document.querySelectorAll('.carousel-item');
+
+        function showSlide(index) {
+            if (index < 0) {
+                currentIndex = items.length - 1;
+            } else if (index >= items.length) {
+                currentIndex = 0;
+            }
+
+            const transformValue = `translateX(-${currentIndex * 100}%)`;
+            document.querySelector('.carousel-container').style.transform = transformValue;
+        }
+
+        function prevSlide() {
+            currentIndex--;
+            showSlide(currentIndex);
+        }
+
+        function nextSlide() {
+            currentIndex++;
+            showSlide(currentIndex);
+        }
+
+        // Afficher la première diapositive au chargement de la page
+        showSlide(currentIndex);
+    </script>
+</body>
+</html>
